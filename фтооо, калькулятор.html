@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>фтоооооо? ето калькулятор????? Я НИ ВЕРЮ</title>
+    <style> body { display: flow-root;
+    margin: auto;
+        width: 500px;
+        height: 500px;
+    } 
+        #display, button {
+            width: 100px;
+            padding: 10px;
+            margin: 10px;
+            border: 10px;
+            border-radius: 5px;
+        }
+        #ylkvmom {
+            width: 490px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body  background="https://pa1.narvii.com/7021/afe37f849a6dd4952e01095e6200fde1bf589786r1-720-405_hq.gif">
+ <input id="ylkvmom">
+        </div>
+            <tr>
+              <td>
+                  <table align="center" bgcolor="#4d4d00">
+                    <tr> 
+                        <td><button onclick="press('1')">1</button></td>
+                        <td><button onclick="press('2')">2</button></td>
+                        <td><button onclick="press('3')">3</button></td>
+                        <td><button onclick="press('+')">+</button></td>
+                    </tr>
+                    <tr> 
+                        <td><button onclick="press('4')">4</button></td>
+                        <td><button onclick="press('5')">5</button></td>
+                        <td><button onclick="press('6')">6</button></td>
+                        <td><button onclick="press('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="press('7')">7</button></td>
+                        <td><button onclick="press('8')">8</button></td>
+                        <td><button onclick="press('9')">9</button></td>
+                        <td><button onclick="press('*')">x</button></td>
+                    </tr>
+                     <tr>
+                        <td><button onclick="clear()">c</button></td>
+                        <td><button onclick="press('0')">0</button></td>
+                        <td><button onclick="calc()">=</button></td>
+                        <td><button onclick="press('/')">/</button></td>
+                    </tr>
+                </table>
+              </td>
+    <script>
+        let result = document.getElementById("ylkvmom");
+        function press(x) {
+            result.value += x;
+        }
+        function clear() {
+            result.value = "";
+        }
+    function calc() {
+    result.value = eval(result.value);
+        }
+    </script>
+</body>
+</html>
